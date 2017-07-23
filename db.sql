@@ -1,0 +1,21 @@
+DROP TABLE IF EXISTS flaskwebapp;
+
+CREATE DATABASE flaskwebapp;
+
+USE flaskwebapp;
+
+-- USERS TABLE 
+CREATE TABLE users(
+	id INT(11) AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(100),
+	username VARCHAR(30),
+	email VARCHAR(100),
+	password VARCHAR(100),
+	register_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+SHOW TABLES;
+
+DESCRIBE users;
+
+SELECT * FROM users;
